@@ -10,3 +10,24 @@ const menu = document.querySelector('.menu');
     menu_btn.addEventListener('click',() => {
         menu.classList.toggle('active')
     })
+///////////////////////////////////////////////////////////////////////////
+document.querySelector('#copiar').onclick = async() =>{
+
+    try {
+        await navigator.clipboard.writeText('tom_tain@hotmail.com');
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+//window.sr= ScrollReveal();
+
+//    sr.reveal('.landing_hero',{
+//        duration: 3000,
+//        origin: 'bottom',
+//        distance: '-50px'
+//    });
+
+    
